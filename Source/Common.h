@@ -156,8 +156,10 @@ namespace juce
 
 // Catch floating point exceptions like division by zero
 #if DEBUG && JUCE_WINDOWS
-#include <float.h>
-unsigned int fpControlState = _controlfp(_EM_INEXACT, _MCW_EM);
+// commented this out, gives linking errors and isn't used anyway
+
+//#include <float.h>
+//unsigned int fpControlState = _controlfp(_EM_INEXACT, _MCW_EM);
 #endif
 
 //===----------------------------------------------------------------------===//

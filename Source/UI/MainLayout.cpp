@@ -40,6 +40,7 @@
 #include "ColourIDs.h"
 #include "ColourSchemesCollection.h"
 #include "CommandPaletteCommonActions.h"
+#include "JsonSerializer.h"
 
 class InitScreen final : public Component, private Timer
 {
